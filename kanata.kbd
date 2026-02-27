@@ -35,7 +35,7 @@
 (deflayer nav
   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   bspc
   XX   XX   XX   XX   XX   XX   XX   home pgdn pgup end  XX   XX   XX
-  XX   XX   XX   XX   XX   XX   XX   up down left   rght XX   ret
+  XX   XX   XX   XX   XX   XX   left down up   rght XX XX   ret
   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
   XX   XX   XX             XX             XX   XX   XX   XX
 )
