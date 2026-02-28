@@ -5,22 +5,26 @@
   lsft z x c v b n m , . / rsft
   lctl lmet lalt       spc       ralt rmet menu rctl
 )
+
 (defalias
   a-num (tap-hold 200 200 a (layer-toggle num))
   t-sym (tap-hold 200 200 t (layer-toggle sym))
   cbspc (multi lctl bspc)
   spc-nav (tap-hold-press 200 200 spc (layer-toggle nav))
-  =    =
-  +    S-=
-  _    S-min
+  r-rct (tap-hold 200 200 r rctl)
+  s-ral (tap-hold 200 200 s ralt)
+  e-lal (tap-hold 200 200 e lalt)
+  i-lct (tap-hold 200 200 i lctl)
 )
+
 (deflayer base
-  XX  XX      XX    XX XX XX      XX XX XX XX XX XX XX XX
-  tab  q      w    f p b      j l u y ; XX XX XX
-  esc  @a-num r    s @t-sym   g m n e i o ' ret
-  lsft x      c    d v z      k h , . / rsft
-  lctl lmet   lalt       @spc-nav       ralt rmet XX rctl
+  XX   XX       XX      XX XX XX      XX XX    XX    XX XX XX XX XX
+  tab  q        w       f  p  b       j  l     u     y  ;  XX XX XX
+  esc  @a-num   @r-rct  @s-ral @t-sym g  m     n     @e-lal @i-lct o ' ret
+  lsft x        c       d  v   z      k  h     ,     .  /   rsft
+  XX XX      XX          @spc-nav          XX XX XX XX
 )
+
 (deflayer num
   XX XX XX XX XX XX XX XX XX XX XX XX XX XX
   XX XX XX XX XX XX XX 1  2  3  XX XX XX XX
