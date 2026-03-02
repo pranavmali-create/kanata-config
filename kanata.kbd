@@ -44,8 +44,8 @@
 
 (deflayer sym
   XX   XX   XX   XX   XX   XX   XX   XX    XX   XX   XX    XX   XX   XX
-  XX   XX   XX   XX   XX   XX   S-6  S-8   S-\  \    grv   XX   XX   XX
+  XX   XX   XX   XX   XX   S-1   S-6  S-8   S-\  \    grv   XX   XX   XX
   XX   XX   XX   XX   XX   S-2  S-7  S-9   S-0  S-[  S-]   S-grv XX
-  XX   XX   XX   XX   XX   min  S-=  S-min =    S-4  S-5   XX
+  XX   XX   XX   XX   S-3   min  S-=  S-min =    S-4  S-5   XX
   XX   XX   XX         @cbspc         XX   XX   XX   XX
 )
