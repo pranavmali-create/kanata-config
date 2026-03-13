@@ -5,10 +5,10 @@
   lsft z x c v b n m , . / rsft
   lctl lmet lalt       spc       ralt rmet menu rctl
 )
-
 (defalias
   a-num (tap-hold 200 200 a (layer-toggle num))
-  t-sym (tap-hold 200 200 t (layer-toggle sym))
+  t-sym1 (tap-hold 200 200 t (layer-toggle sym1))
+  j-sym2 (tap-hold 200 200 j (layer-toggle sym2))
   cbspc (multi lctl bspc)
   spc-nav (tap-hold-press 200 200 spc (layer-toggle nav))
   r-rct (tap-hold 200 200 r rctl)
@@ -16,15 +16,13 @@
   e-lal (tap-hold 200 200 e lalt)
   i-lct (tap-hold 200 200 i lctl)
 )
-
 (deflayer base
   XX   XX       XX      XX XX XX      XX XX    XX    XX XX XX XX XX
   tab  q        w       f  p  b       j  l     u     y  ;  XX XX XX
-  esc  @a-num   @r-rct  @s-ral @t-sym g  m     n     @e-lal @i-lct o ' ret
+  esc  @a-num   @r-rct  @s-ral @t-sym1 g  m  @j-sym2 @e-lal @i-lct o ' ret
   lsft x        c       d  v   z      k  h     ,     .  /   rsft
   XX XX      XX          @spc-nav          XX XX XX XX
 )
-
 (deflayer num
   XX XX XX XX XX XX XX XX XX XX XX XX XX XX
   XX XX XX XX XX XX XX 1  2  3  XX XX XX XX
@@ -32,8 +30,6 @@
   XX XX XX XX XX XX 7  8  9  XX XX XX
   XX XX XX       @cbspc       XX XX XX XX
 )
-
-
 (deflayer nav
   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   bspc
   XX   XX   XX   XX   XX   XX   XX   home pgdn pgup end  XX   XX   XX
@@ -41,11 +37,17 @@
   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
   XX   XX   XX             XX             XX   XX   XX   XX
 )
-
-(deflayer sym
-  XX   XX   XX   XX   XX   XX   XX   XX    XX   XX   XX    XX   XX   XX
-  XX   XX   XX   XX   XX   S-1   S-6  S-8   S-\  \    grv   XX   XX   XX
-  XX   XX   XX   XX   XX   S-2  S-7  S-9   S-0  S-[  S-]   S-grv XX
-  XX   XX   XX   XX   S-3   min  S-=  S-min =    S-4  S-5   XX
-  XX   XX   XX         @cbspc         XX   XX   XX   XX
+(deflayer sym1
+  XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
+  XX   XX   XX   XX   XX   XX   grv  S-grv S-1 S-2  XX   XX   XX   XX
+  XX   XX   XX   XX   XX   XX   S-3  S-4   S-5 S-6  XX   XX   XX
+  XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
+  XX   XX   XX             @cbspc           XX   XX   XX   XX
+)
+(deflayer sym2
+  XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
+  XX   S-7  S-8  S-9  S-0  XX   XX   XX   XX   XX   XX   XX   XX   XX
+  XX   [    ]    S-[  S-]  XX   XX   XX   XX   XX   XX   XX   XX
+  XX   S-\  \    min  S-min =   S-=  XX   XX   XX   XX   XX
+  XX   XX   XX             @cbspc           XX   XX   XX   XX
 )
