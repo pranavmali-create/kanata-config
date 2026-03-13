@@ -8,7 +8,7 @@
 (defalias
   a-num (tap-hold 200 200 a (layer-toggle num))
   t-sym1 (tap-hold 200 200 t (layer-toggle sym1))
-  j-sym2 (tap-hold 200 200 j (layer-toggle sym2))
+  n-sym2 (tap-hold 200 200 n (layer-toggle sym2))
   cbspc (multi lctl bspc)
   spc-nav (tap-hold-press 200 200 spc (layer-toggle nav))
   r-rct (tap-hold 200 200 r rctl)
@@ -19,7 +19,7 @@
 (deflayer base
   XX   XX       XX      XX XX XX      XX XX    XX    XX XX XX XX XX
   tab  q        w       f  p  b       j  l     u     y  ;  XX XX XX
-  esc  @a-num   @r-rct  @s-ral @t-sym1 g  m  @j-sym2 @e-lal @i-lct o ' ret
+  esc  @a-num   @r-rct  @s-ral @t-sym1 g  m  @n-sym2 @e-lal @i-lct o ' ret
   lsft x        c       d  v   z      k  h     ,     .  /   rsft
   XX XX      XX          @spc-nav          XX XX XX XX
 )
