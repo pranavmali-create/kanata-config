@@ -6,15 +6,15 @@
   lctl lmet lalt       spc       ralt rmet menu rctl
 )
 (defalias
-  a-num (tap-hold 200 200 a (layer-toggle num))
-  t-sym1 (tap-hold 200 200 t (layer-toggle sym1))
-  n-sym2 (tap-hold 200 200 n (layer-toggle sym2))
+  a-num (tap-hold 200 170 a (layer-toggle num))
+  t-sym1 (tap-hold 200 170 t (layer-toggle sym1))
+  n-sym2 (tap-hold 170 200 n (layer-toggle sym2))
   cbspc (multi lctl bspc)
-  spc-nav (tap-hold-press 200 200 spc (layer-toggle nav))
-  r-rct (tap-hold 200 200 r rctl)
-  s-ral (tap-hold 200 200 s ralt)
-  e-lal (tap-hold 200 200 e lalt)
-  i-lct (tap-hold 200 200 i lctl)
+  spc-nav (tap-hold-press 200 170 spc (layer-toggle nav))
+  r-rct (tap-hold 200 170 r rctl)
+  s-ral (tap-hold 200 170 s ralt)
+  e-lal (tap-hold 200 170 e lalt)
+  i-lct (tap-hold 200 170 i lctl)
 )
 (deflayer base
   XX   XX       XX      XX XX XX      XX XX    XX    XX XX XX XX XX
